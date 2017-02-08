@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Domande</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
+        </style>
+    </head>
+    <body>
+        <h1>QUESTIONARIO DI TECNOLOGIE DI PROGETTAZIONE DI SISTEMI INFORMATICI E TELECOMUNICAZIONI</h1>
+        <H3>ANNO QUINTO</H3>
+        <div style="background-color:#2f4f4f;color:white;font-family: 'Fredericka the Great', cursive;font-size:48px;position:relative">
+            <form action="javascript:checkAns()">
+                Cosa significa SMTP ?<br>
+                <input type="radio" name="Domanda 1" value = "1" id="1-1">Simple Message Transfer Protocol<br>
+                <input type="radio" name="Domanda 1" value="2" id="1-2">Sample Mail Transfer Protocol<br>
+                <input type="radio" name="Domanda 1" value="3" id="1-3">Simple Mail Transfer Protocol<br>
+                <br><br>
+                Indica il tag scritto in maniera corretta<br>
+                <input type="radio" name="Domanda 2" value="1" id="2-1">&lt;input type="radio" name ="Domanda 2"&gt;<br>
+                <input type="radio" name="Domanda 2" value="2" id="2-2">&lt;input text name =Domanda2&gt;<br>
+                <input type="radio" name="Domanda 2" value="3" id="2-3">&lt;input form action="radio" uname"&gt;<br><br>
+                <input type="submit">
+                <br>
+                <br>
+                <div style="background-color:#663300">&nbsp;</div>
+            </form>
+        </div>
+        <script type="text/javascript">
+            function checkAns(){
+                var answer1;
+                var answer2;
+                if (document.getElementById('1-1').checked) {
+                    answer1 = true;
+                }
+                if(document.getElementById('2-1').checked){
+                    answer2 = true;
+                }
+                if(answer1&&answer2){
+                    alert("Corretto");
+                }
+                else{
+                    alert("Riprova");
+                }
+            }
+        </script>
+    </body>
+</html>
